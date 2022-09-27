@@ -18,9 +18,7 @@ The code requires the following parameters to be passed by the user.
 
 
 DIR: The full path to the working directory
-
 j:   Index for cell line representation method (1-5)
-
 i:   Index for the 25 drug representation CC spaces (1-25: corresponding to A1-E5)
     
 We have fixed the following optimized hyper-parameters:
