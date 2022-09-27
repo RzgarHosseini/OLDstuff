@@ -16,19 +16,18 @@ The Metrics sub-folder includes the 25 CC feature spaces for all single drugs. T
 ### Parameters
 The code requires the following parameters to be passed by the user.
 
-DIR: # The full path to the working directory
-j:   #Index for cell line representation method (1-5)
-i:   #Index for the 25 drug representation CC spaces (1-25: corresponding to A1-E5)
+### DIR: The full path to the working directory
+### j:   Index for cell line representation method (1-5)
+### i:   Index for the 25 drug representation CC spaces (1-25: corresponding to A1-E5)
     
-
 We have fixed the following optimized hyper-parameters:
-    n1=2000 #number of neurons in the first layer
-    n2=1000 #number of neurons in the second layer
-    n3=500  #number of neurons in the third layer
-    lr=0.0001 #learning rate
-    batch=128 #batch size
-    seedd=94  #seed number 
-    num=356   #size of the input vector
+    n1=2000   number of neurons in the first layer
+    n2=1000   number of neurons in the second layer
+    n3=500    number of neurons in the third layer
+    lr=0.0001 learning rate
+    batch=128 batch size
+    seedd=94  seed number 
+    num=356   size of the input vector
 ## Examples:
 
 ## Output
