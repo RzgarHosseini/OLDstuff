@@ -11,4 +11,13 @@ Each column in the csv files corresponds to a given cell lines, which is represe
 We have used two distinct datasets, the Merck dataset (Data/Merck.csv) and the Sanger dataset (Data/Sanger.csv), which we have used respectively for predictions in a regression (Loewe synergy scores) or classification (Binary scores) based setting.  
 
 ### Drug Features (Chemical Checker extended drug similarity profiles)
-The Metrics sub-folder includes the 25 CC feature spaces for all single drugs. The .csv file in the Data/Metrics/Merck sub-folder contains 36 rows each of which corresponds to a single drug that are specified in the Data/Metrics/Single_Drug_Info_Merck.csv    
+The Metrics sub-folder includes the 25 CC feature spaces for all single drugs. The .csv files in the Data/Metrics/Merck sub-folder contain 36 rows each of which corresponds to a given drug specified in the Data/Metrics/Drugs_Single_Info_Merck.csv. Similarly, the .csv files in the Data/Metrics/Sanger sub-folder contain 62 rows each of which corresponds to a given drug specified in the Data/Metrics/Drugs_Single_Info_Sanger.csv.
+
+### Parameters
+The code requires the following parameters to be passed by the user.
+
+We have fixed the following optimized hyper-parameters:
+
+## Examples:
+
+## Output
