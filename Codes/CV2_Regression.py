@@ -36,8 +36,8 @@ def Prepare_Features(DIR,num):
     celllines=np.unique(data.Cell_Line)
  
     #Reading drug features from the 25 matrices
-    for filename in os.listdir(str(DIR)+'/Data/Metrics/'):
-            M=np.array(pd.read_csv(str(DIR)+'/Data/Metrics/'+filename))
+    for filename in os.listdir(str(DIR)+'/Data/Metrics/Merck'):
+            M=np.array(pd.read_csv(str(DIR)+'/Data/Metrics/Merck/'+filename))
             drug_features.append(M)
             drug_features_name.append(filename)
 
