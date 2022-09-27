@@ -23,13 +23,13 @@ i:   Index for the 25 drug representation CC spaces (1-25: corresponding to A1-E
     
 We have fixed the following optimized hyper-parameters:
 
-n1=2000   number of neurons in the first layer <br>
-n2=1000   number of neurons in the second layer <br>
-n3=500    number of neurons in the third layer <br>
-lr=0.0001 learning rate <br>
-batch=128 batch size <br>
-seedd=94  seed number <br> 
-num=356   size of the input vector <br>
+n1=2000   (number of neurons in the first layer) <br>
+n2=1000   (number of neurons in the second layer) <br>
+n3=500    (number of neurons in the third layer) <br>
+lr=0.0001 (learning rate) <br>
+batch=128 (batch size) <br>
+seedd=94  (seed number) <br> 
+num=356   (size of the input vector) <br>
 
 ## Examples:
 
