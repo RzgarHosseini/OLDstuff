@@ -37,11 +37,11 @@ num=356   (size of the input vector) <br>
 The final output file is a .csv file that specifies the real and predicted value of the (drug pair + cell line) triplets, for each of which the fold index and their corresponding index in the original dataset are specified. This output file is then used for calculating the relevant evaluation metrics. Furthermore, the trained model is saved in a seperate directory.
 
 ## Examples:
-python3 /Codes/CV1_Regression.py /Home/User/CCSynergy 3 12 <br> 
+### python3 /Codes/CV1_Regression.py /Home/User/CCSynergy 3 12 <br> 
 In this example, drug synergy is predicted using the Merck dataset under CV1 scheme. The CCSynergy method III (i.e.e CARNIVAL-based signaling pathway activity scores) is used for cell line representation and C2 CC signatures are used for encoding the drug features. <br> 
 The output will be saved in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2 directory. <br>   
 
-python3 /Codes/CV2_Classification.py /Home/User/CCSynergy 5 18 2 <br> 
+### python3 /Codes/CV2_Classification.py /Home/User/CCSynergy 5 18 2 <br> 
 In this example, drug synergy is predicted using the Sanger dataset under CV1 scheme. The CCSynergy method V (i.e.e DepMap-based signaling pathway dependency scores) is used for cell line representation and D3 CC signatures are used for encoding the drug features. In this example, the the index for testing tissue is 2, which corresponds to "breast" tissue in the Sanger dataset.<br>  
 The output will be saved in /Home/User/CCSynergy/.csv file and the information regarding the trained model will be stored in directory. <br>   
 The output will be saved in /Home/User/CCSynergy/DNN_CV2_Classification_Cell5_D3_2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV2_Classification_Cell5_D3_2 directory. <br> 
