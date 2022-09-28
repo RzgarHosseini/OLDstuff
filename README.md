@@ -38,7 +38,7 @@ The final output file is a .csv file that specifies the real and predicted value
 
 ## Examples:
 ### python3 /Codes/CV1_Regression.py /Home/User/CCSynergy 3 12 <br> 
-In this example, drug synergy is predicted using the Merck dataset under CV1 scheme. The CCSynergy method III (i.e.e CARNIVAL-based signaling pathway activity scores) is used for cell line representation and C2 CC signatures (12-th CC space) are used for encoding the drug features. <br> 
+In this example, drug synergy is predicted using the Merck dataset under CV1 scheme. The CCSynergy method III (i.e.e CARNIVAL-based signaling pathway activity scores) is used for cell line representation and C2 CC signatures (12-th CC space) are used for encoding the drug features.<br> 
 The output will be saved in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2 directory. <br>   
 
 ### python3 /Codes/CV2_Classification.py /Home/User/CCSynergy 5 18 2 <br> 
