@@ -20,9 +20,9 @@ The code requires the following parameters to be passed by the user.
 DIR: The full path to the working directory <br>
 j:   Index for cell line representation method (1-5) <br>
 i:   Index for the 25 drug representation CC spaces (1-25: corresponding to A1-E5) <br> 
-TINDX:  Index for a given tissue, which varies between 1 and 6 (in the merck dataset) and between 1 and 3 (in the Sanger dataset). You can see the mapping tissues to their corresponding indices from the "Tissue" and "Tindex" columns in the Data/Merck.csv and Data/Sanger.csv files. Note that this parameter is necessary only in the CV2 codes.
+TINDX:  Index for a given tissue, which varies between 1 and 6 (in the merck dataset) and between 1 and 3 (in the Sanger dataset). The indexing of the tissues can be determined from the "Tissue" and "Tindex" columns in the Data/Merck.csv and Data/Sanger.csv files. Note that this parameter is necessary only in the CV2 scheme.
     
-We have fixed the following optimized hyper-parameters:
+We have fixed the following (optimized) hyper-parameters:
 
 n1=2000   (number of neurons in the first layer) <br>
 n2=1000   (number of neurons in the second layer) <br>
@@ -34,14 +34,14 @@ num=356   (size of the input vector) <br>
 
 
 ## Output
-The final output file is a .csv file that specifies the real and predicted value of the (drug pair + cell line) triplets, for each of which the fold index and their corresponding index in the original dataset are specified. This output file is then used for calculating the relevant evaluation metrics. Furthermore, the trained model is saved in a seperate directory.
+The final output file is a .csv file that specifies the real and predicted value of each (drug pair + cell line) triplet. Furthermore, it also specifies the index of each triplet in the original dataset along with their fold number. This output file is then used for calculating all the required evaluation metrics. Furthermore, the trained model is saved in a seperate directory.
 
 ## Examples:
 ### python3 /Codes/CV1_Regression.py /Home/User/CCSynergy 3 12 <br> 
-In this example, drug synergy is predicted using the Merck dataset under CV1 scheme. The CCSynergy method III (i.e.e CARNIVAL-based signaling pathway activity scores) is used for cell line representation and C2 CC signatures (12-th CC space) are used for encoding the drug features. <br> 
+In this example, drug synergy is predicted using the Merck dataset under the CV1 scheme. The CCSynergy method III (i.e.e CARNIVAL-based signaling pathway activity scores) is used for cell line representation and C2 CC signatures (12-th CC space) are used for encoding the drug features. <br> 
 
 The output will be saved in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2 directory. <br>   
 
 ### python3 /Codes/CV2_Classification.py /Home/User/CCSynergy 5 18 2 <br> 
-In this example, drug synergy is predicted using the Sanger dataset under CV1 scheme. The CCSynergy method V (i.e.e DepMap-based signaling pathway dependency scores) is used for cell line representation and D3 CC signatures (18-th CC space) are used for encoding the drug features. In this example, the the index for testing tissue is 2, which corresponds to "breast" in the Sanger dataset. <br>  
+In this example, drug synergy is predicted using the Sanger dataset under the CV2 scheme. The CCSynergy method V (i.e.e DepMap-based signaling pathway dependency scores) is used for cell line representation and D3 CC signatures (18-th CC space) are used for encoding the drug features. In this example, the index for testing tissue is 2, which corresponds to "breast" in the Sanger dataset. <br>  
 The output will be saved in /Home/User/CCSynergy/DNN_CV2_Classification_Cell5_D3_2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV2_Classification_Cell5_D3_2 directory. <br> 
