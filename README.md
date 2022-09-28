@@ -42,6 +42,6 @@ In this example, drug synergy is predicted using the Merck dataset under CV1 sch
 The output will be saved in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV1_Regression_Cell3_C2 directory. <br>   
 
 ### python3 /Codes/CV2_Classification.py /Home/User/CCSynergy 5 18 2 <br> 
-In this example, drug synergy is predicted using the Sanger dataset under CV1 scheme. The CCSynergy method V (i.e.e DepMap-based signaling pathway dependency scores) is used for cell line representation and D3 CC signatures are used for encoding the drug features. In this example, the the index for testing tissue is 2, which corresponds to "breast" tissue in the Sanger dataset.<br>  
+In this example, drug synergy is predicted using the Sanger dataset under CV1 scheme. The CCSynergy method V (i.e.e DepMap-based signaling pathway dependency scores) is used for cell line representation and D3 CC signatures are used for encoding the drug features. In this example, the the index for testing tissue is 2, which corresponds to "breast" in the Sanger dataset.<br>  
 The output will be saved in /Home/User/CCSynergy/.csv file and the information regarding the trained model will be stored in directory. <br>   
 The output will be saved in /Home/User/CCSynergy/DNN_CV2_Classification_Cell5_D3_2.csv file and the information regarding the trained model will be stored in /Home/User/CCSynergy/DNN_CV2_Classification_Cell5_D3_2 directory. <br> 
