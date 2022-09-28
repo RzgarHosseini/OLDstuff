@@ -20,7 +20,7 @@ The code requires the following parameters to be passed by the user.
 DIR: The full path to the working directory <br>
 j:   Index for cell line representation method (1-5) <br>
 i:   Index for the 25 drug representation CC spaces (1-25: corresponding to A1-E5) <br> 
-TINDX:  Index for a given tissue, which varies between 1 and 6 (in the merck dataset) and between 1 and 3 (in the Sanger dataset). You can see the mapping tissues to their corresponding indices from the "Tissue" and "Tindex" columns in the Data/Merck.csv and Data/Sanger.csv files.Note that this parameter is necessary only in the CV2 codes.
+TINDX:  Index for a given tissue, which varies between 1 and 6 (in the merck dataset) and between 1 and 3 (in the Sanger dataset). You can see the mapping tissues to their corresponding indices from the "Tissue" and "Tindex" columns in the Data/Merck.csv and Data/Sanger.csv files. Note that this parameter is necessary only in the CV2 codes.
     
 We have fixed the following optimized hyper-parameters:
 
