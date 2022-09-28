@@ -35,3 +35,6 @@ num=356   (size of the input vector) <br>
 
 ## Output
 The final output file is a .csv file that specifies the real and predicted value of the (drug pair + cell line) triplets, for each of which the fold index and their corresponding index in the original dataset are specified. This output file is then used for calculating the relevant evaluation metrics. Furthermore, the trained model is saved in a seperate directory.
+
+## Examples:
+Python3 /Codes/CV1_Regression.py /Home/User/CCSynergy 3 12 <br> 
