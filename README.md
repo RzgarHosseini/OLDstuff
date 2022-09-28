@@ -32,6 +32,6 @@ batch=128 (batch size) <br>
 seedd=94  (seed number) <br> 
 num=356   (size of the input vector) <br>
 
-## Examples:
 
 ## Output
+The final output file is a .csv file that specifies the real and predicted value for (drug pair + cell line) triplets, for each of which the fold index and their corresponding index in the original dataset are specified. This output file is then used for calculating the relevant evaluation metrics. 
